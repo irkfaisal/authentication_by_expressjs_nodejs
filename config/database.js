@@ -12,3 +12,12 @@ const connectDB = async (DATABASE_URL) => {
     }
 }
 export default connectDB;
+
+// function for MongoDB cluster
+// const connectDB = async () => {
+//     mongoose.set('strictQuery', false);
+//     const { connection } = await mongoose.connect(process.env.DATABASE_URL);
+
+//     console.log(`Database is connect with ${connection.host}`);
+// };
+// export default connectDB;
